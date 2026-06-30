@@ -1,7 +1,7 @@
 [project]
 name = "manim-compass"
 version = "0.1.0"
-description = ""
+description = "A Manim extension for creating compass animations"
 authors = [
     {name = "jj-math",email = "liwei.0028@163.com"}
 ]
