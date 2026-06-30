@@ -1,0 +1,25 @@
+[project]
+name = "manim-compass"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "jj-math",email = "liwei.0028@163.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "manim>=0.18.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/jj-math/manim-compass"
+Repository = "https://github.com/jj-math/manim-compass"
+Documentation = "https://github.com/jj-math/manim-compass#readme"
+"Bug Tracker" = "https://github.com/jj-math/manim-compass/issues"
+
+[tool.poetry]
+packages = [{include = "manim_compass", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
