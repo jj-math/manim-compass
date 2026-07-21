@@ -17,7 +17,7 @@ class Scene_Name(SingleRulerScene):
         )
         self.wait()
         
-        line = self.draw_line_with_pencil(start = A, end = B, color = RED)
+        line = self.draw_line_with_pencil(A,B,color = RED)
         self.wait()
         self.put_ruler_back()
         

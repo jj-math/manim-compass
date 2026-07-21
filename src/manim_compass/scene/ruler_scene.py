@@ -4,7 +4,6 @@ __all__ = [
 # from manim import *
 from manim.mobject.geometry.line import Line
 from manim.scene.moving_camera_scene import MovingCameraScene
-from manim.animation.creation import Create
 from manim.animation.composition import AnimationGroup
 from manim.animation.transform import Restore
 from manim.constants import *
@@ -33,10 +32,7 @@ class SingleRulerScene(MovingCameraScene):
             ),
             run_time = 0.5*run_time
         )
-        anims = [
-            DrawPath(self.pencil,line),
-            Create(line),
-        ]
+        anims = [DrawPath(self.pencil,line)]
         if added_anims is not None:
             anims.extend(added_anims)
         self.play(*anims, run_time = 0.5*run_time,**kwargs)
