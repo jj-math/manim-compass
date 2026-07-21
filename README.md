@@ -201,10 +201,14 @@ self.play(
 )
 ```
 
-### 场景类：CompassScene
+### 场景类
 
-要制作尺规作图的动画，除了上面的动画类的组合使用方式，还提供了另外一种使用方法：CompassScene 类。
+要制作尺规作图的动画，除了上面的动画类的组合使用方式，还提供了另外一种使用方法：CompassScene 类和 SingleRulerScene 类。
 
-CompassScene 类，继承自 Scene 类，用于制作尺规作图的场景。场景类包括圆规、直尺和铅笔三个属性，并实现了对应的 draw_arc 和 draw_line 等方法。
+CompassScene 类，继承自 MovingCameraScene 类，用于制作尺规作图的场景。场景类包括圆规、直尺和铅笔三个属性，并实现了对应的 draw_arc 和 draw_line 等方法。
 
 具体的使用方法，请参考示例代码：demo/compass_scene_demo.py。
+
+SingleRulerScene 类，继承自 MovingCameraScene 类，用于制作单尺作图的场景。场景类包括一个直尺、一支铅笔，并实现了对应的 draw_line_with_pencil 方法。
+
+具体的使用方法，请参考示例代码：demo/ruler_scene_demo.py。
